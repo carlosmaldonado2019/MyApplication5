@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         //Set Event
         setSingleEvent(mainGrid)
+
     }
 
     private fun setSingleEvent(mainGrid: GridLayout) {
@@ -25,9 +26,26 @@ class MainActivity : AppCompatActivity() {
             //You can see , all child item is CardView , so we just cast object to CardView
             val cardView = mainGrid.getChildAt(i) as CardView
             cardView.setOnClickListener {
-                val intent = Intent(this@MainActivity, dos::class.java)
+                if(i ==0) {
+                    val intent = Intent(this@MainActivity, dos::class.java)
+                    startActivity(intent)
+                }
+                if(i == 1) {
+                    val intent = Intent(this@MainActivity, tres::class.java)
+                    startActivity(intent)
+                }
+                if(i == 2) {
+                    val intent = Intent(this@MainActivity, cuatro::class.java)
+                    startActivity(intent)
+                }
+
+                if(i == 3){
+                    val intent = Intent(this@MainActivity, cinco::class.java)
+                    startActivity(intent)
+                }
+
                 //intent.putExtra("info", "This is activity from card item index  $i")
-                startActivity(intent)
+
             }
         }
     }

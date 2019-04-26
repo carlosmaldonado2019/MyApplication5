@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".cinco">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/textViewEventImage"
+            android:src="@drawable/referencias"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+            android:id="@+id/txtformacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Referencias"
+            android:textSize="20dp"
+
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textViewEventImage"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/txtedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nielsen. Un 49% de los teléfonos en España son smartphones.consulta: 15 de abril 2012. Disponible en http://www.europapress.es/portaltic/movilidad/dispositivos/noticia-49-telefonos-espana-son-smartphones-20111221130551.html"
+            android:textSize="15dp"
+            android:layout_below="@id/txtformacion"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/txtedad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STMicroelectronics. Hoja de especificaciones LIS33DLH. consulta: 15 de abril de 2012. Disponible en http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00213470.pdf"
+            android:textSize="15dp"
+            android:layout_below="@id/txtedad"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/txtedad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AKM. Hoja de especificaciones AK8973. consulta: 15 de abril de 2012. Disponible en http://www.alldatasheet.com/datasheet-pdf/pdf/219477/AKM/AK8973.html"
+            android:textSize="15dp"
+            android:layout_below="@id/txtedad2"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/txtedad4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marshal, A; Medvedev, O; Antonov, A. Use of a smartphone for improved self management of pulmonary rehabilitation, International Journal of Telemedicine and Applications, vol. 2008, pp. 1-5"
+            android:textSize="15dp"
+            android:layout_below="@id/txtedad3"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+</RelativeLayout>

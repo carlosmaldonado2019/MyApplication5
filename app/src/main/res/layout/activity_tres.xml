@@ -5,25 +5,22 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".dos"
-        android:orientation="horizontal">
-
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/textViewEventImage"
-                android:src="@drawable/images"
-                android:layout_marginTop="30dp"
-                android:layout_centerHorizontal="true"/>
+        tools:context=".tres">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/textViewEventImage"
+            android:src="@drawable/director"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
     <TextView
             android:id="@+id/txtautor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Autor: Carlos Maldonado"
+            android:text="Dra. Sandra Julieta Saldivar González"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:gravity="center"
-
             android:layout_below="@id/textViewEventImage"
     />
 
@@ -31,8 +28,7 @@
             android:id="@+id/txtedad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="Edad: 32 años"
+            android:text="Correo: yuly@uabc.edu.mx"
             android:textSize="20dp"
             android:layout_below="@id/txtautor"
             android:layout_marginBottom="20dp"
@@ -42,9 +38,8 @@
             android:id="@+id/txtformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Formacion Academica"
+            android:text="Formación Académica"
             android:textSize="20dp"
-
             android:textStyle="bold"
             android:layout_below="@id/txtedad"
             android:gravity="center"/>
@@ -53,11 +48,26 @@
             android:id="@+id/txtlic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Licenciado en Informatica, egresado de la Facultad de Ciencias Administravias, UABC"
+            android:text="Doctorado en Ciencias Administrativas, fecha de examen del grado 20 de Agosto 2012,de Facultad de Ciencias Administrativas de la U.A.B.C."
             android:textSize="15dp"
             android:layout_below="@id/txtformacion"
             android:gravity="center"/>
 
+    <TextView
+            android:id="@+id/txtlic2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maestría en Ciencias en Tecnología de Redes e Informática fecha de examen de grado 03 de Agosto de 2005, CETYS, Centro de Enseñanza Técnica y Superior."
+            android:textSize="15dp"
+            android:layout_below="@id/txtlic"
+            android:gravity="center"/>
 
-
+    <TextView
+            android:id="@+id/txtlic3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Licenciado en Sistemas Computacionales, egresado de la Facultad de Ciencias Ingeniería,UA.B.C. "
+            android:textSize="15dp"
+            android:layout_below="@id/txtlic2"
+            android:gravity="center"/>
 </RelativeLayout>
